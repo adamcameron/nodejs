@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  node:
+    build:
+      context: .
+    volumes:
+      - ../src:/usr/share/nodeJs/src
+      - ../test:/usr/share/nodeJs/test
+    stdin_open: true
+    tty: true
