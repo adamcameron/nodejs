@@ -3,7 +3,7 @@ version: '3'
 services:
   node:
     build:
-      context: .
+      context: node
     volumes:
       - ../src:/usr/share/nodeJs/src
       - ../test:/usr/share/nodeJs/test
