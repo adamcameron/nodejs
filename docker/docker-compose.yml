@@ -5,7 +5,7 @@ services:
     build:
       context: node
     volumes:
-      - ..:/usr/share/nodeJs
-      - ./node/root_home:/root
+      - ../src:/usr/share/nodeJs/src
+      - ../test:/usr/share/nodeJs/test
     stdin_open: true
     tty: true
