@@ -6,5 +6,6 @@ services:
       context: node
     volumes:
       - ..:/usr/share/nodeJs
+      - ./node/root_home:/root
     stdin_open: true
     tty: true
